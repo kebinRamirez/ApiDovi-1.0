@@ -54,6 +54,7 @@ column_names = ["FECHA", "DEPARTAMENTO", "MUNICIPIO", "DIA", "HORA", "BARRIO", "
 # Execute the "SELECT *" query
 # Connect to the database
 frames = []
+frames.append(postgresql_to_dataframe(conn, "select * from violencia_intrafamiliar_2010", column_names))
 frames.append(postgresql_to_dataframe(conn, "select * from violencia_intrafamiliar_2014", column_names))
 frames.append(postgresql_to_dataframe(conn, "select * from violencia_intrafamiliar_2017", column_names))
 frames.append(postgresql_to_dataframe(conn, "select * from violencia_intrafamiliar_2018", column_names))
