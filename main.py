@@ -10,7 +10,7 @@ from distribution import *
 from distribution import Neigh
 from distribution import Colombia, States, Town
 from distribution.Colombia import datasets
-#from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI()
